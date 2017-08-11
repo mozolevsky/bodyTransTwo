@@ -1,0 +1,181 @@
+.header {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1440px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  letter-spacing: 0.4px;
+
+  &_ind {
+    position: relative;
+    top: 0;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+    background-color: white;
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-link {
+    margin-right: 45px;
+    color: $black;
+    @include trans();
+  }
+
+  &__nav-link_light {
+    color: $white;
+  }
+
+  &__nav-link:hover {
+    text-decoration: none;
+    color: $electric-blue;
+  }
+
+  &__btn {
+    @include borderButton($electric-blue);
+    @extend .wave;
+    @include fontSH(16px, 16px);
+
+    padding: 10px 14px;
+  }
+
+  &__btn_light {
+    @include borderButton($white);
+  }
+
+  &__btn:focus, &__btn:hover {
+    color: $electric-blue;
+  }
+
+  &__btn_light:focus, &__btn_light:hover {
+    color: $white;
+  }
+
+  &__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 1540px) {
+  .header {
+    width: 100%;
+    padding: 0 50px;
+
+    &_ind {
+      top: 0!important;
+      //height: 6vh;
+    }
+  }
+}
+
+
+@media (max-width: 1150px) {
+  .header {
+    top: 15px;
+    padding: 0 36px 0 31px;
+
+    &__nav-wrapper {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+      width: 20px;
+      height: 14px;
+      position: relative;
+    }
+
+    &__burger-dash {
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background: $black;
+      @include trans();
+    }
+
+    &__burger-dash_light {
+      background: $white;
+    }
+
+    &__burger-dash__top {
+      top: 0;
+    }
+
+    &__burger-dash__middle {
+      top: 6px;
+    }
+
+    &__burger-dash__bottom {
+      top: 12px;
+    }
+  }
+}
+
+
+@media(max-width: $sm) { // <992
+  .header {
+    top: 15px;
+    padding: 0 36px 0 31px;
+
+    &__nav-wrapper {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+      width: 20px;
+      height: 14px;
+      position: relative;
+    }
+
+    &__burger-dash {
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background: $black;
+      @include trans();
+    }
+
+    &__burger-dash_light {
+      background: $white;
+    }
+
+    &__burger-dash__top {
+      top: 0;
+    }
+
+    &__burger-dash__middle {
+      top: 6px;
+    }
+
+    &__burger-dash__bottom {
+      top: 12px;
+    }
+  }
+}
+
+@media(max-width: $xs) { // <768
+  .header {
+    padding: 0 20px;
+
+    &__logo-img {
+      width: 213px;
+      height: auto;
+    }
+  }
+}
