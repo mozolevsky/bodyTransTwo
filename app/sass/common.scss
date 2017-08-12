@@ -10,6 +10,7 @@
 body {
   font-family: 'freight-sans-pro', Arial, sans-serif;
   font-size: 22px;
+  line-height: 24px;
   color: var(--black);
 }
 
@@ -24,6 +25,13 @@ h1 {
 h3 {
   font-family: 'ff-tisa-web-pro', "Times New Roman", Times, serif;;
   font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-family: 'ff-tisa-web-pro', "Times New Roman", Times, serif;;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 25px;
 }
