@@ -27,7 +27,6 @@
     margin-bottom: 10px;
     width: 250px;
     height: 30px;
-    color: $slate;
     font-weight: bold;
     background: url('../img/grey-logo.svg') no-repeat center;
     background-size: contain;
@@ -38,13 +37,13 @@
   &__link {
     margin-left: 20px;
     margin-right: 20px;
-    color: $pinkish-grey;
+    color: var(--slate-grey);
     @include trans();
   }
 
   &__link:hover {
     text-decoration: none;
-    color: $electric-blue;
+    color: var(--electric-blue);
     padding: 10px 0;
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
@@ -53,7 +52,7 @@
 
 
 
-@media (max-width: $sm) {
+@media (max-width: var(--sm)) {
   .footer {
     flex-direction: column;
     height: auto;
@@ -70,7 +69,7 @@
 }
 
 
-@media (max-width: $xs) {
+@media (max-width: var(--xs)) {
   .footer {
     &__nav {
       flex-wrap: wrap;

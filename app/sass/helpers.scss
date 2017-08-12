@@ -1,10 +1,10 @@
 
-:root {
-  /* breakpoints */
-  --xs: 767px;
-  --sm: 991px;
-  --md: 1199px;
+/* breakpoints */
+$xs: 767px;
+$sm: 991px;
+$md: 1199px;
 
+:root {
   /* Color palette */
   --white: #ffffff;
   --pale-grey: #f6f9fc;
@@ -40,6 +40,7 @@
   /* other params */
   --borderRad: 3px;
   --shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.07);
+  --buttonShadow: 0 12px 18px 0 rgba(200, 200, 200, 0.5);
 }
 
 
@@ -55,7 +56,7 @@
 
 @mixin borderButton($color) {
   display: inline-block;
-  border-radius: $borderRad;
+  border-radius: var(--borderRad) ;
   border: solid 1px $color;
   background: transparent;
 
@@ -70,7 +71,7 @@
 }
 
 @mixin borderButtonHover ($color) {
-  color: $white;
+  color: var(--white);
   background: $color;
   text-decoration: none;
 }
@@ -78,9 +79,9 @@
 
 /* selectors gain */
 %blue-button {
-  border-radius: $borderRad;
+  border-radius: var(--borderRad);
   background-image: linear-gradient(98deg, #008cff, #0076f5);
-  color: $white;
+  color: var(--white);
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -88,7 +89,7 @@
 
 %blue-button:hover {
   text-decoration: none;
-  color: $white;
+  color: var(--white);
 }
 
 

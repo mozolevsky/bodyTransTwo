@@ -33,21 +33,25 @@
 
   &__nav-link {
     margin-right: 45px;
-    color: $black;
+    color: var(--black);
     @include trans();
   }
 
+  &__nav-link_active {
+    font-weight: bold;
+  }
+
   &__nav-link_light {
-    color: $white;
+    color: var(--white);
   }
 
   &__nav-link:hover {
     text-decoration: none;
-    color: $electric-blue;
+    color: var(--electric-blue);
   }
 
   &__btn {
-    @include borderButton($electric-blue);
+    @include borderButton(var(--electric-blue));
     @extend .wave;
     @include fontSH(16px, 16px);
 
@@ -55,15 +59,15 @@
   }
 
   &__btn_light {
-    @include borderButton($white);
+    @include borderButton(var(--white));
   }
 
   &__btn:focus, &__btn:hover {
-    color: $electric-blue;
+    color: var(--electric-blue);
   }
 
   &__btn_light:focus, &__btn_light:hover {
-    color: $white;
+    color: var(--white);
   }
 
   &__burger {
@@ -104,12 +108,12 @@
       position: absolute;
       width: 20px;
       height: 2px;
-      background: $black;
+      background: var(--black);
       @include trans();
     }
 
     &__burger-dash_light {
-      background: $white;
+      background: var(--white);
     }
 
     &__burger-dash__top {
@@ -147,12 +151,12 @@
       position: absolute;
       width: 20px;
       height: 2px;
-      background: $black;
+      background: var(--black);
       @include trans();
     }
 
     &__burger-dash_light {
-      background: $white;
+      background: var(--white);
     }
 
     &__burger-dash__top {
@@ -169,7 +173,7 @@
   }
 }
 
-@media(max-width: $xs) { // <768
+@media(max-width: $sm) { // <768
   .header {
     padding: 0 20px;
 

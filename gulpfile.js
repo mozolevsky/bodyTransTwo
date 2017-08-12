@@ -28,9 +28,8 @@ gulp.task('stylesMove', function() {
 });
 
 gulp.task('fixImgPaths', function() {
-    return gulp.src('dist/css/main.css')
-
-        .pipe(gulp.dest('dist/css'))
+return gulp.src('dist/css/main.css')
+    .pipe(gulp.dest('dist/css'))
 });
 
 gulp.task('cssMin', ['stylesMove', 'fixImgPaths'], function() {
