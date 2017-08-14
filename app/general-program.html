@@ -30,7 +30,14 @@
                 <a href="#" class="header__nav-link">Free tools</a>
                 <a href="#" class="header__nav-link">Program</a>
                 <a href="#" class="header__nav-link">Blog</a>
-                <a href="#" class="header__nav-link">Login</a>
+                <div href="#" class="header__nav-link header__nav-link_login" @click="submenu.status = !submenu.status">
+                    <span>Login</span>
+                    <div class="header-submenu" v-if="submenu.status">
+                        <a href="#" class="header-submenu__link">30 Days to Optimal Gut Health</a>
+                        <a href="#" class="header-submenu__link">Type something something</a>
+                        <a href="#" class="header-submenu__link">Integrated BodyTransformation System</a>
+                    </div>
+                </div>
             </nav>
             <a href="#" class="header__btn">Start here</a>
         </div>

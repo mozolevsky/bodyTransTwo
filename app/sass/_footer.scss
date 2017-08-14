@@ -50,7 +50,7 @@
 
 
 
-@media (max-width: var(--sm)) {
+@media (max-width: $sm) {
   .footer {
     flex-direction: column;
     height: auto;
@@ -59,20 +59,18 @@
     &__copy {
       margin-bottom: 20px;
     }
-
-    &__nav {
-
-    }
   }
 }
 
 
-@media (max-width: var(--xs)) {
+@media (max-width: $xs) {
   .footer {
+    &__copy {
+      margin-bottom: 0;
+    }
+
     &__nav {
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center;
+      display: none;
     }
 
     &__link {
