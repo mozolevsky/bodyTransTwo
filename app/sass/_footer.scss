@@ -11,13 +11,7 @@
   text-transform: uppercase;
   border-top: solid 1px rgba(151, 151, 151, 0.2);
 
-  /*-webkit-box-flex: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;*/
-
   &_ind {
-    //height: 9vh!important;
     padding: 5px 0 10px;
   }
 
@@ -31,6 +25,10 @@
     background: url('../img/grey-logo.svg') no-repeat center;
     background-size: contain;
 
+    &_colorful {
+      background: url('../img/logo-header.svg') no-repeat center;
+      background-size: contain;
+    }
   }
 
 
