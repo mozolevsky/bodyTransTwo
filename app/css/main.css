@@ -466,6 +466,9 @@ button {
         cursor: pointer; }
   .header__nav-link_active {
     font-weight: bold; }
+  .header__nav-link_active-green {
+    font-weight: bold;
+    color: var(--soft-green); }
   .header__nav-link_light {
     color: var(--white); }
   .header__nav-link:hover {
@@ -488,6 +491,22 @@ button {
     font-size: 16px;
     line-height: 16px;
     padding: 10px 14px; }
+  .header__btn_green {
+    display: inline-block;
+    -webkit-border-radius: var(--borderRad);
+            border-radius: var(--borderRad);
+    border: solid 1px var(--soft-green);
+    background: transparent;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: var(--soft-green);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+    .header__btn_green:hover {
+      color: var(--soft-green) !important; }
   .header__btn_light {
     display: inline-block;
     -webkit-border-radius: var(--borderRad);
@@ -1117,3 +1136,124 @@ button {
     margin-top: 5px; }
   .pgeneral__btn {
     width: 100%; } }
+
+.mpdesc {
+  padding-top: 20px;
+  padding-bottom: 50px; }
+  .mpdesc__title {
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 39px; }
+  .mpdesc__desc {
+    margin-bottom: 25px;
+    color: var(--slate);
+    font-size: 18px;
+    line-height: 22px; }
+  .mpdesc__section-one {
+    min-height: 605px;
+    margin-bottom: 50px;
+    background: url("../img/zzzz@3x.png") no-repeat;
+    background-size: contain;
+    background-position: -webkit-calc(50% - 330px) center;
+    background-position: calc(50% - 330px) center; }
+  .mpdesc__section-two {
+    min-height: 605px;
+    background: url("../img/group-59-copy-9@3x.png") no-repeat;
+    background-size: auto 605px;
+    background-position: -webkit-calc(50% + 337px) top;
+    background-position: calc(50% + 337px) top; }
+
+@media (max-width: 991px) {
+  .mpdesc {
+    padding-bottom: 20px; }
+    .mpdesc__title {
+      margin-bottom: 16px;
+      font-size: 28px;
+      line-height: 34px; }
+    .mpdesc__section-one {
+      margin-bottom: 40px;
+      min-height: 400px;
+      background-size: 400px auto;
+      background-position: -webkit-calc(50% - 330px) 34px;
+      background-position: calc(50% - 330px) 34px; }
+    .mpdesc__section-two {
+      min-height: 366px;
+      background: url("../img/group-59-copy-9@3x.png") no-repeat;
+      background-size: auto 366px;
+      background-position: -webkit-calc(50% + 337px) top;
+      background-position: calc(50% + 337px) top; } }
+
+@media (max-width: 767px) {
+  .mpdesc {
+    padding-bottom: 25px; }
+    .mpdesc__title {
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 13px; }
+    .mpdesc__section-one {
+      margin-bottom: 15px;
+      padding-bottom: 280px;
+      background-size: 270px auto;
+      background-position: 50% bottom; }
+    .mpdesc__section-two {
+      padding-bottom: 300px;
+      background-size: 270px auto;
+      background-position: 50% bottom; } }
+
+.benefits {
+  padding-bottom: 35px; }
+  .benefits__title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 13px;
+    margin-top: 0;
+    width: 702px;
+    font-size: 44px;
+    line-height: 48px;
+    font-weight: bold;
+    text-align: center; }
+  .benefits__desc {
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 545px;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--slate);
+    text-align: center; }
+
+.benefit {
+  margin-bottom: 35px; }
+  .benefit__title {
+    margin-bottom: 17px;
+    padding-left: 37px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bold;
+    background: url("../img/group-41.svg") no-repeat left center;
+    background-size: 20px 21px; }
+  .benefit__desc {
+    padding-left: 37px;
+    color: var(--slate); }
+
+@media (max-width: 991px) {
+  .benefits__title {
+    font-size: 28px;
+    line-height: 31px; } }
+
+@media (max-width: 767px) {
+  .benefits__title {
+    width: 90%;
+    font-size: 22px;
+    line-height: 24px; }
+  .benefits__desc {
+    margin-bottom: 13px;
+    width: 90%;
+    font-size: 16px;
+    line-height: 18px; }
+  .benefit {
+    margin-bottom: 18px; }
+    .benefit__title {
+      margin-bottom: 4px;
+      font-size: 16px;
+      line-height: 19px; } }

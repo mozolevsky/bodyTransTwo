@@ -53,6 +53,11 @@
     font-weight: bold;
   }
 
+  &__nav-link_active-green {
+    font-weight: bold;
+    color: var(--soft-green);
+  }
+
   &__nav-link_light {
     color: var(--white);
   }
@@ -68,6 +73,14 @@
     @include fontSH(16px, 16px);
 
     padding: 10px 14px;
+  }
+
+  &__btn_green {
+    @include  borderButton(var(--soft-green));
+
+    &:hover {
+      color: var(--soft-green)!important;
+    }
   }
 
   &__btn_light {
