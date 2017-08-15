@@ -92,5 +92,22 @@ $md: 1199px;
   color: var(--white);
 }
 
+@mixin block-title() {
+  font-family: 'ff-tisa-web-pro', "Times New Roman", Times, serif;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.05;
+  margin-bottom: 11px;
+  color: var(--black);
+  text-align: center;
+}
+
+@mixin block-text() {
+  font-family: 'freight-sans-pro', Arial, sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  color: var(--black);
+}
+
 
 

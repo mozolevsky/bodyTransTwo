@@ -41,13 +41,33 @@ h5 {
   font-size: 24px;
 }
 
+.block-title {
+  @include block-title();
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  &_white {
+    margin-bottom: 25px;
+    color: var(--white);
+    font-weight: 400;
+  }
+}
+
+.block-subtitle {
+  font-family: 'ff-tisa-web-pro', "Times New Roman", Times, serif;;
+  font-size: 22px;
+  color: var(--slate-two);
+  font-weight: 700;
+  text-align: center;
+}
+
 button {
   border: none;
   outline: none;
 }
 
-input {
-
+.show-sm {
+  display: none;
 }
 
 
@@ -136,6 +156,23 @@ input {
   h5 {
     font-size: 20px;
   }
+
+  .block-title {
+    font-size: 28px;
+
+    &_white {
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+  }
+
+  .show-sm {
+    display: block;
+  }
+
+  .show-lg {
+    display: none;
+  }
 }
 
 
@@ -152,5 +189,11 @@ input {
 
   h5 {
     font-size: 18px;
+  }
+
+  .block-title {
+    margin-bottom: 20px;
+    font-size: 22px;
+
   }
 }

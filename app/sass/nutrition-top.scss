@@ -1,0 +1,103 @@
+.nutrition-top {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  &__promo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+
+    &-text {
+      width: 30%;
+    }
+
+    &-img {
+      width: 65%;
+      padding-bottom: 40px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 10px 20px;
+    @include borderButton(var(--electric-blue));
+
+    &:hover {
+      @include borderButtonHover(var(--electric-blue));
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .nutrition-top {
+    padding-top: 20px;
+
+    &__text-promo {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    &__promo {
+      flex-wrap: wrap;
+
+      &-title {
+        text-align: center;
+      }
+
+      &-text {
+        width: 100%;
+        margin-right: 10%;
+        margin-bottom: 10px;
+
+
+      }
+
+      &-img {
+        width: 100%;
+        margin-left: 5%;
+      }
+    }
+
+    &__text-block {
+      padding: 0;
+
+      .nutrition-page__text {
+        text-align: left;
+      }
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .nutrition-top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__promo {
+      margin-left: 15px;
+
+      &-title {
+        font-size: 22px;
+      }
+
+      &-text {
+        margin-right: 15px;
+        margin-bottom: 0;
+      }
+    }
+
+    &__text-block {
+      .nutrition-page__text {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+    }
+  }
+}
