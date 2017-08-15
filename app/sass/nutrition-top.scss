@@ -2,6 +2,10 @@
   padding-top: 60px;
   padding-bottom: 40px;
 
+  &__text-promo {
+    margin-bottom: 25px;
+  }
+
   &__promo {
     display: flex;
     justify-content: space-between;
@@ -15,6 +19,10 @@
       width: 65%;
       padding-bottom: 40px;
 
+      &_second {
+        padding-bottom: 0;
+      }
+
       img {
         width: 100%;
       }
@@ -27,6 +35,14 @@
 
     &:hover {
       @include borderButtonHover(var(--electric-blue));
+    }
+
+    &_green {
+      @include borderButton(var(--soft-green));
+
+      &:hover {
+        @include borderButtonHover(var(--soft-green));
+      }
     }
   }
 }
@@ -90,6 +106,10 @@
       &-text {
         margin-right: 15px;
         margin-bottom: 0;
+      }
+
+      &-img_second {
+        margin-left: -5%;
       }
     }
 

@@ -1,5 +1,5 @@
 .mpdesc {
-  padding-top: 20px;
+  padding-top: 0;
   padding-bottom: 50px;
 
   &__title {
@@ -61,6 +61,7 @@
     &__title {
       @include fontSH(22px, 26px);
       margin-bottom: 13px;
+      margin-top: 0;
     }
 
     &__section-one {

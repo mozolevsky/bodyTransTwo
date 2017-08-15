@@ -1,6 +1,7 @@
 .review {
   padding: 40px 0;
 
+
   &__text {
     text-align: center;
   }
@@ -69,6 +70,10 @@
 
 @media (max-width: $sm) {
   .review {
+
+    &_crawled {
+      margin-top: -160px;
+    }
 
     &__content {
       margin-top: 40px;
