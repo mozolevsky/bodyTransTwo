@@ -16,11 +16,29 @@
     }
 
     &-img {
+      position: relative;
       width: 65%;
       padding-bottom: 40px;
 
+      &::after {
+        position: absolute;
+        content: '';
+        width: 238px;
+        min-height: 72px;
+        bottom: 46px;
+        left: 9%;
+        background: url('../img/instant-access.png') no-repeat center;
+        background-size: contain;
+      }
+
       &_second {
         padding-bottom: 0;
+
+        &::after {
+          left: 20%;
+          background: url('../img/instant-access2.png') no-repeat center;
+          background-size: contain;
+        }
       }
 
       img {
@@ -67,13 +85,16 @@
         width: 100%;
         margin-right: 10%;
         margin-bottom: 10px;
-
-
       }
 
       &-img {
         width: 100%;
         margin-left: 5%;
+
+        &::after {
+          bottom: 16px;
+          left: calc(50% - 205px);
+        }
       }
     }
 
@@ -98,6 +119,7 @@
 
     &__promo {
       margin-left: 15px;
+      padding-bottom: 37px;
 
       &-title {
         font-size: 22px;
@@ -106,6 +128,13 @@
       &-text {
         margin-right: 15px;
         margin-bottom: 0;
+      }
+
+      &-img {
+        &::after {
+          bottom: -7px;
+          left: calc(50% - 151px);
+        }
       }
 
       &-img_second {

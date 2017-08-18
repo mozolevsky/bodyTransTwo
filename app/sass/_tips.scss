@@ -26,6 +26,21 @@
     }
   }
 
+  &__btn-wrapper {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      left: -119px;
+      top: -56px;
+      width: 100px;
+      min-height: 100px;
+      background: url('../img/arrow2.png') no-repeat center;
+      background-size: contain;
+    }
+  }
+
   &__btn {
     padding: 21px 40px;
     display: inline-block;
@@ -62,6 +77,12 @@
 
       &:nth-child(2n) {
         margin-right: 0;
+      }
+    }
+
+    &__btn-wrapper {
+      &::after {
+        content: none;
       }
     }
   }

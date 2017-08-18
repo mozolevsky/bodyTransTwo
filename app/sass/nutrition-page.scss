@@ -199,7 +199,7 @@
       }
     }
 
-    &::after {
+  /*  &::after {
       content: '';
       position: absolute;
       bottom: 0;
@@ -209,7 +209,7 @@
       height: 2px;
       width: 100px;
       background-color: var(--white-two);
-    }
+    }*/
   }
 
   &__step-title {
@@ -566,12 +566,63 @@
     }
 
     &__step-title {
+      position: relative;
       font-size: 22px;
+      padding-bottom: 64px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 324px;
+        min-height: 42px;
+        left: calc(50% - 162px);
+        bottom: 11px;
+      }
     }
 
     &__text {
       text-align: center;
       padding: 0 35px;
+    }
+
+    &__step {
+      padding-top: 0;
+    }
+
+    &__step_1  {
+      &::after {
+        background: url('../img/how-works__step_1.png') no-repeat center;
+        background-size: contain;
+        left: calc(50% - 172px);
+      }
+    }
+
+    &__step_2 {
+      &::after {
+        background: url('../img/how-works__step_2.png') no-repeat center;
+        background-size: contain;
+      }
+    }
+
+    &__step_3 {
+      &::after {
+        background: url('../img/how-works__step_3.png') no-repeat center;
+        background-size: contain;
+      }
+    }
+
+    &__step_4 {
+      &::after {
+        background: url('../img/how-works__step_4.png') no-repeat center;
+        background-size: contain;
+      }
+    }
+
+    &__step_5 {
+      &::after {
+        background: url('../img/how-works__step_5.png') no-repeat center;
+        background-size: contain;
+      }
     }
   }
 
@@ -767,7 +818,10 @@
     &__item {
       padding: 0;
       padding-bottom: 30px;
-      padding-top: 100px;
+      padding-top: 110px;
+      background-size: auto 100px;
+      background-repeat: no-repeat;
+      background-position: top center;
 
       &::before {
         display: none;
@@ -786,6 +840,26 @@
       &-desc {
         margin-bottom: 10px;
         font-size: 16px;
+      }
+
+      &_1 {
+        background-image: url('../img/curriculum__item_1.jpg');
+      }
+
+      &_2 {
+        background-image: url('../img/curriculum__item_2.jpg');
+      }
+
+      &_3 {
+        background-image: url('../img/curriculum__item_3.jpg');
+      }
+
+      &_4 {
+        background-image: url('../img/curriculum__item_4.jpg');
+      }
+
+      &_5 {
+        background-image: url('../img/curriculum__item_5.jpg');
       }
     }
 

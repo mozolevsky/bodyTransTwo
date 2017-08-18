@@ -14,6 +14,21 @@
     color: var(--slate);
   }
 
+  &__btn-wrapper {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      right: -24px;
+      top: -2px;
+      width: 150px;
+      min-height: 150px;
+      background: url('../img/arrow1.png') no-repeat center;
+      background-size: contain;
+    }
+  }
+
   &__btn {
     display: inline-block;
     padding: 21px 28px;
@@ -32,6 +47,12 @@
     padding-top: 450px;
     background-position: calc(50%) -80px;
     background-size: 700px auto;
+
+    &__btn-wrapper {
+      &::after {
+        content: none;
+      }
+    }
 
     &__btn {
       margin: 0 34%;

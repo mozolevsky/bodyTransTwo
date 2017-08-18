@@ -19,11 +19,24 @@
   }
 
   &__text {
+    position: relative;
     margin-bottom: 40px;
     font-family: 'freight-sans-pro', Arial, sans-serif;
     font-size: 24px;
     color: var(--slate);
     line-height: 1.2;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 47px;
+      left: -65px;
+      width: 40px;
+      min-height: 130px;
+      background: url('../img/guthealth-arrow.png') no-repeat center;
+      background-size: contain;
+
+    }
   }
 
   &__garanty-title {
@@ -118,6 +131,11 @@
       padding: 0 70px;
       text-align: center;
       font-size: 22px;
+
+      &::before {
+        top: -23px;
+        left: calc(50% - 315px);
+      }
     }
 
     &__content {
@@ -172,6 +190,15 @@
       margin-bottom: 25px;
       padding: 0;
       font-size: 18px;
+
+      &::before {
+        width: 37px;
+        min-height: 30px;
+        background: url(../img/mobile-arrow.png) no-repeat center;
+        background-size: contain;
+        top: 40px;
+        left: calc(50% - 198px);
+      }
     }
 
     &__btn {
@@ -201,6 +228,16 @@
 
     &__garanty-desc {
       font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .bottom-block {
+    &__text {
+      &::before {
+        left: calc(50% - 178px);
+      }
     }
   }
 }

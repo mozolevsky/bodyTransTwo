@@ -32,7 +32,7 @@
                 <a href="#" class="header__nav-link">Blog</a>
                 <div href="#" class="header__nav-link header__nav-link_login" @click="submenu.status = !submenu.status">
                     <span>Login</span>
-                    <div class="header-submenu" v-if="submenu.status">
+                    <div class="header-submenu" v-if="submenu.status" v-cloak>
                         <a href="#" class="header-submenu__link">30 Days to Optimal Gut Health</a>
                         <a href="#" class="header-submenu__link">Type something something</a>
                         <a href="#" class="header-submenu__link">Integrated BodyTransformation System</a>

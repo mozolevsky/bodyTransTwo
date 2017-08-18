@@ -32,7 +32,7 @@
                 <a href="#" class="header__nav-link">Blog</a>
                 <div href="#" class="header__nav-link header__nav-link_login" @click="submenu.status = !submenu.status">
                     <span>Login</span>
-                    <div class="header-submenu" v-if="submenu.status">
+                    <div class="header-submenu" v-if="submenu.status" v-cloak>
                         <a href="#" class="header-submenu__link">30 Days to Optimal Gut Health</a>
                         <a href="#" class="header-submenu__link">Type something something</a>
                         <a href="#" class="header-submenu__link">Integrated BodyTransformation System</a>
@@ -123,7 +123,7 @@
 
                 <section class="tale">
                     <a href="#" class="tale__link">
-                        <img src="img/group-5@3x.jpg" alt="" class="tale__img">
+                        <img src="img/thumb1.jpg" alt="" class="tale__img">
                     </a>
                     <div class="tale__tags-block">
                         <span class="tale__tag tale__tag_light">Gluten Free</span>
@@ -139,7 +139,7 @@
                 </section>
                 <section class="tale">
                     <a href="#" class="tale__link">
-                        <img src="img/group-8@3x.jpg" alt="" class="tale__img">
+                        <img src="img/thumb2.jpg" alt="" class="tale__img">
                     </a>
                     <div class="tale__tags-block">
                         <span class="tale__tag">Sugar</span>
@@ -154,7 +154,7 @@
                 </section>
                 <section class="tale">
                     <a href="#" class="tale__link">
-                        <img src="img/group-9@3x.jpg" alt="" class="tale__img">
+                        <img src="img/thumb3.jpg" alt="" class="tale__img">
                     </a>
                     <div class="tale__tags-block">
                         <span class="tale__tag tale__tag_light">Gluten Free</span>
@@ -189,7 +189,7 @@
             <div class="row program">
                 <div class="col-md-8 col-sm-12">
                     <div class="program__img-wrapper">
-                        <img src="img/group-40@3x.png" alt="" class="program__img">
+                        <img src="img/program2.jpg" alt="" class="program__img">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
@@ -205,7 +205,7 @@
             <div class="row program">
                 <div class="col-md-8 col-md-push-4 col-sm-12">
                     <div class="program__img-wrapper">
-                        <img src="img/group-40@3x.png" alt="" class="program__img">
+                        <img src="img/program2.jpg" alt="" class="program__img">
                     </div>
                 </div>
                 <div class="col-md-4 col-md-pull-8 col-sm-12">
@@ -220,7 +220,7 @@
             <div class="row program">
                 <div class="col-md-8 col-sm-12">
                     <div class="program__img-wrapper">
-                        <img src="img/group-30-copy@3x.png" alt="" class="program__img">
+                        <img src="img/program3.jpg" alt="" class="program__img">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
@@ -292,7 +292,9 @@
         </div>
             <div class="row">
                 <div class="col-md-5 col-md-offset-7">
-                    <a href="#" class="tips__btn">Get your copy</a>
+                    <div class="tips__btn-wrapper">
+                        <a href="#" class="tips__btn">Get your copy</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -306,7 +308,9 @@
                     <p class="home-bottom__desc">Our mission is to cut straight through the noise and confusion that
                         has taken over the fitness and nutrition industry.
                     </p>
-                    <a href="" class="home-bottom__btn">Get Your FREE Guide</a>
+                    <div class="home-bottom__btn-wrapper">
+                        <a href="" class="home-bottom__btn">Get Your FREE Guide</a>
+                    </div>
                 </div>
             </div>
         </div>
