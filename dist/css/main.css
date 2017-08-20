@@ -942,12 +942,8 @@ button {
     background-size: auto 85%; }
   .how-works__step {
     position: relative;
-    padding: 30px 0; }
-    .how-works__step:first-child {
-      padding-top: 0; }
-    .how-works__step:last-child::after {
-      display: none; }
-    .how-works__step::after {
+    padding: 30px 0;
+    /*  &::after {
       content: '';
       position: absolute;
       bottom: 0;
@@ -956,7 +952,12 @@ button {
       display: block;
       height: 2px;
       width: 100px;
-      background-color: var(--white-two); }
+      background-color: var(--white-two);
+    }*/ }
+    .how-works__step:first-child {
+      padding-top: 0; }
+    .how-works__step:last-child::after {
+      display: none; }
   .how-works__step-title {
     margin-bottom: 15px;
     font-size: 24px;
@@ -1182,10 +1183,39 @@ button {
     .how-works .container-wrapper {
       background-image: none; }
     .how-works__step-title {
-      font-size: 22px; }
+      position: relative;
+      font-size: 22px;
+      padding-bottom: 64px; }
+      .how-works__step-title::after {
+        content: '';
+        position: absolute;
+        width: 324px;
+        min-height: 42px;
+        left: -webkit-calc(50% - 162px);
+        left: calc(50% - 162px);
+        bottom: 11px; }
     .how-works__text {
       text-align: center;
       padding: 0 35px; }
+    .how-works__step {
+      padding-top: 0; }
+    .how-works__step_1::after {
+      background: url("../img/how-works__step_1.png") no-repeat center;
+      background-size: contain;
+      left: -webkit-calc(50% - 172px);
+      left: calc(50% - 172px); }
+    .how-works__step_2::after {
+      background: url("../img/how-works__step_2.png") no-repeat center;
+      background-size: contain; }
+    .how-works__step_3::after {
+      background: url("../img/how-works__step_3.png") no-repeat center;
+      background-size: contain; }
+    .how-works__step_4::after {
+      background: url("../img/how-works__step_4.png") no-repeat center;
+      background-size: contain; }
+    .how-works__step_5::after {
+      background: url("../img/how-works__step_5.png") no-repeat center;
+      background-size: contain; }
   .what-get__text {
     text-align: center; }
   .what-get__item {
@@ -1290,7 +1320,10 @@ button {
   .curriculum__item {
     padding: 0;
     padding-bottom: 30px;
-    padding-top: 100px; }
+    padding-top: 110px;
+    background-size: auto 100px;
+    background-repeat: no-repeat;
+    background-position: top center; }
     .curriculum__item::before {
       display: none; }
     .curriculum__item::after {
@@ -1302,6 +1335,16 @@ button {
     .curriculum__item-desc {
       margin-bottom: 10px;
       font-size: 16px; }
+    .curriculum__item_1 {
+      background-image: url("../img/curriculum__item_1.jpg"); }
+    .curriculum__item_2 {
+      background-image: url("../img/curriculum__item_2.jpg"); }
+    .curriculum__item_3 {
+      background-image: url("../img/curriculum__item_3.jpg"); }
+    .curriculum__item_4 {
+      background-image: url("../img/curriculum__item_4.jpg"); }
+    .curriculum__item_5 {
+      background-image: url("../img/curriculum__item_5.jpg"); }
   .curriculum__list {
     font-size: 16px; }
     .curriculum__list-title {
@@ -1365,10 +1408,24 @@ button {
     .nutrition-top__promo-text {
       width: 30%; }
     .nutrition-top__promo-img {
+      position: relative;
       width: 65%;
       padding-bottom: 40px; }
+      .nutrition-top__promo-img::after {
+        position: absolute;
+        content: '';
+        width: 238px;
+        min-height: 72px;
+        bottom: 46px;
+        left: 9%;
+        background: url("../img/instant-access.png") no-repeat center;
+        background-size: contain; }
       .nutrition-top__promo-img_second {
         padding-bottom: 0; }
+        .nutrition-top__promo-img_second::after {
+          left: 20%;
+          background: url("../img/instant-access2.png") no-repeat center;
+          background-size: contain; }
       .nutrition-top__promo-img img {
         width: 100%; }
   .nutrition-top__btn {
@@ -1428,6 +1485,10 @@ button {
       .nutrition-top__promo-img {
         width: 100%;
         margin-left: 5%; }
+        .nutrition-top__promo-img::after {
+          bottom: 16px;
+          left: -webkit-calc(50% - 205px);
+          left: calc(50% - 205px); }
     .nutrition-top__text-block {
       padding: 0; }
       .nutrition-top__text-block .nutrition-page__text {
@@ -1440,12 +1501,17 @@ button {
     padding-top: 10px;
     padding-bottom: 10px; }
     .nutrition-top__promo {
-      margin-left: 15px; }
+      margin-left: 15px;
+      padding-bottom: 37px; }
       .nutrition-top__promo-title {
         font-size: 22px; }
       .nutrition-top__promo-text {
         margin-right: 15px;
         margin-bottom: 0; }
+      .nutrition-top__promo-img::after {
+        bottom: -7px;
+        left: -webkit-calc(50% - 151px);
+        left: calc(50% - 151px); }
       .nutrition-top__promo-img_second {
         margin-left: -5%; }
     .nutrition-top__text-block .nutrition-page__text {
@@ -1864,11 +1930,21 @@ button {
     color: var(--black);
     text-align: left; }
   .bottom-block__text {
+    position: relative;
     margin-bottom: 40px;
     font-family: 'freight-sans-pro', Arial, sans-serif;
     font-size: 24px;
     color: var(--slate);
     line-height: 1.2; }
+    .bottom-block__text::before {
+      content: '';
+      position: absolute;
+      top: 47px;
+      left: -65px;
+      width: 40px;
+      min-height: 130px;
+      background: url("../img/guthealth-arrow.png") no-repeat center;
+      background-size: contain; }
   .bottom-block__garanty-title {
     padding-left: 110px;
     padding-top: 40px;
@@ -1946,6 +2022,10 @@ button {
     padding: 0 70px;
     text-align: center;
     font-size: 22px; }
+    .bottom-block__text::before {
+      top: -23px;
+      left: -webkit-calc(50% - 315px);
+      left: calc(50% - 315px); }
   .bottom-block__content {
     width: 100%; }
   .bottom-block__btn {
@@ -1982,6 +2062,14 @@ button {
       margin-bottom: 25px;
       padding: 0;
       font-size: 18px; }
+      .bottom-block__text::before {
+        width: 37px;
+        min-height: 30px;
+        background: url(../img/mobile-arrow.png) no-repeat center;
+        background-size: contain;
+        top: 40px;
+        left: -webkit-calc(50% - 198px);
+        left: calc(50% - 198px); }
     .bottom-block__btn {
       width: 70%;
       max-width: 300px;
@@ -2003,6 +2091,11 @@ button {
       background-position: 0; }
     .bottom-block__garanty-desc {
       font-size: 16px; } }
+
+@media (max-width: 590px) {
+  .bottom-block__text::before {
+    left: -webkit-calc(50% - 178px);
+    left: calc(50% - 178px); } }
 
 .programs {
   padding-top: 64px;
@@ -2104,6 +2197,17 @@ button {
     .tips__text_bold {
       color: var(--black);
       font-weight: bold; }
+  .tips__btn-wrapper {
+    position: relative; }
+    .tips__btn-wrapper::after {
+      position: absolute;
+      content: '';
+      left: -119px;
+      top: -56px;
+      width: 100px;
+      min-height: 100px;
+      background: url("../img/arrow2.png") no-repeat center;
+      background-size: contain; }
   .tips__btn {
     padding: 21px 40px;
     display: inline-block;
@@ -2135,7 +2239,9 @@ button {
       margin-right: 20px;
       margin-left: 20px; }
       .tips__list-item:nth-child(2n) {
-        margin-right: 0; } }
+        margin-right: 0; }
+    .tips__btn-wrapper::after {
+      content: none; } }
 
 @media (max-width: 767px) {
   .tips__subtitle {
@@ -2188,6 +2294,17 @@ button {
   .home-bottom__desc {
     margin-bottom: 25px;
     color: var(--slate); }
+  .home-bottom__btn-wrapper {
+    position: relative; }
+    .home-bottom__btn-wrapper::after {
+      position: absolute;
+      content: '';
+      right: -24px;
+      top: -2px;
+      width: 150px;
+      min-height: 150px;
+      background: url("../img/arrow1.png") no-repeat center;
+      background-size: contain; }
   .home-bottom__btn {
     display: inline-block;
     padding: 21px 28px;
@@ -2203,6 +2320,8 @@ button {
     background-position: -webkit-calc(50%) -80px;
     background-position: calc(50%) -80px;
     background-size: 700px auto; }
+    .home-bottom__btn-wrapper::after {
+      content: none; }
     .home-bottom__btn {
       margin: 0 34%; } }
 

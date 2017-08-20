@@ -18,7 +18,7 @@
     margin-bottom: 50px;
     background: url('../img/zzzz@3x.png') no-repeat;
     background-size: contain;
-    background-position: calc(50% - 330px) center;
+    background-position: calc(50% - 464px) center;
   }
 
   &__section-two {
@@ -66,14 +66,14 @@
 
     &__section-one {
       margin-bottom: 15px;
-      padding-bottom: 280px;
-      background-size: 270px auto;
+      padding-bottom: 215px;
+      background-size: auto 230px;
       background-position: 50% bottom;
     }
 
     &__section-two {
-      padding-bottom: 300px;
-      background-size: 270px auto;
+      padding-bottom: 215px;
+      background-size: 294px auto;
       background-position: 50% bottom;
     }
   }

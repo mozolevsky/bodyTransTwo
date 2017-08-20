@@ -1,5 +1,6 @@
 "use strict";
 
+/* here is scripts for video in fitness 1 site written using java script */
 ;(function () {
     var videoContainer = document.querySelector(".video-container") || '';
     if (videoContainer) {
