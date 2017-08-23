@@ -1386,16 +1386,21 @@ button {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-left: 10%; }
     .nutrition-top__promo-text {
-      width: 30%; }
+      width: 25%;
+      margin-right: 10%;
+      margin-left: 10%; }
+      .nutrition-top__promo-text_second {
+        width: 30%;
+        margin-right: 0; }
     .nutrition-top__promo-img {
       position: relative;
-      width: 65%;
+      width: 55%;
       padding-bottom: 40px; }
       .nutrition-top__promo-img::after {
         position: absolute;
@@ -1466,6 +1471,7 @@ button {
         text-align: center; }
       .nutrition-top__promo-text {
         width: 100%;
+        margin: 0;
         margin-right: 10%;
         margin-bottom: 10px; }
       .nutrition-top__promo-img {
